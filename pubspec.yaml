@@ -1,0 +1,87 @@
+name: kapetayo
+description: KapeTayo Coffee Delivery App
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # STATE MANAGEMENT
+  provider: ^6.1.2
+
+  # GOOGLE SIGN IN
+  google_sign_in: ^6.2.1
+
+  # 🔥 FIREBASE (UPDATED COMPATIBLE SET)
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.17.8
+  cloud_firestore: ^4.15.8
+  firebase_messaging: ^14.7.10
+
+  # LOCAL DATABASE
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  path_provider: ^2.1.2
+
+  # UI / DESIGN
+  google_fonts: ^6.2.1
+  flutter_spinkit: ^5.2.1
+  animations: ^2.0.11
+  font_awesome_flutter: ^10.7.0
+
+  # MEDIA
+  cached_network_image: ^3.3.1
+  image_picker: ^1.1.0   # 🔥 updated (important fix)
+
+  # UTILITIES
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+  # MAPS / LOCATION
+  google_maps_flutter: ^2.6.1
+  geolocator: ^11.0.0   # 🔥 updated for newer Android
+
+  # NETWORK
+  http: ^1.2.0
+
+  # EXTERNAL APPS
+  url_launcher: ^6.2.5
+
+  # 🔔 NOTIFICATIONS
+  flutter_local_notifications: ^17.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/placeholder.png
+    - assets/images/americano.png
+    - assets/images/cappuccino.png
+    - assets/images/espresso.png
+    - assets/images/coffee_latte.png
+    - assets/images/caramel_macchiato.png
+    - assets/images/mint_chocolate.png
+    - assets/images/mocha_latte.png
+    - assets/images/choco_coffee.png
+    - assets/images/icy_choco.png
+    - assets/images/matcha_latte.png
+    - assets/images/milky_taro.png
+    - assets/images/redvelvet_latte.png
+    - assets/images/cookies_cream.png
+    - assets/images/dark_chocolate.png
+    - assets/images/strawberry_chocolate.png
