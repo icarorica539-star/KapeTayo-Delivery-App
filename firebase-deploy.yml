@@ -1,0 +1,26 @@
+name: Deploy to Firebase Hosting 
+on:
+  push:
+    branches:
+      -main
+jobs:
+build_and_deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: action/checkout@v3
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        channel: 'stable'
+    - name: Install dependecies
+      run: flutter pub get
+    - name: Build web
+      run: flutter build web --release
+    - name: Deploy Firebase 
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secret.FIREBASE_SERVICE-ACCOUNT_KAPETAYO_DELIVERY }}'
+        channelId: live 
+        projectId: kapetayo-delivery
